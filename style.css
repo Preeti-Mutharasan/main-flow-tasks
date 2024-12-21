@@ -1,0 +1,114 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.home-page-content {
+    position: absolute; /* Allows precise placement */
+    top: 50%; /* Aligns to the vertical center */
+    left: 30%; /* Aligns to the horizontal center */
+    transform: translate(-50%, -50%); /* Centers the text perfectly */
+    text-align: center; /* Aligns text within the element */
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    
+}
+button {
+background-color: #18b6dd; 
+color: white; 
+font-size: 18px; 
+padding: 7px 20px; 
+border: none;
+border-radius: 8px; 
+cursor: pointer; 
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+  
+button:hover {
+background-color: #0056b3; 
+transform: scale(1.05); 
+}
+  
+button:active {
+background-color: #18b6dd; 
+transform: scale(1); 
+}
+
+body {
+    background-image: url('07.jpg');
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav .logo{
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
+nav{
+  height: 70px;
+  background: #020203;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ol{
+  float: right;
+  margin-right: 30px;
+}
+nav ol li{
+  display: inline-block;
+}
+nav ol li a{
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #020203;
+  transition: .5s;
+}
+nav ol li a:hover,
+nav ol li a.active{
+  color: #23dbdb;
+}
+nav ol ol{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ol li:hover > ol{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ol ol li{
+  width: 180px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+nav ol ol li a{
+  line-height: 50px;
+}
+nav ol ol ol{
+  border-top: none;
+}
+nav ol ol ol li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ol ol li a i{
+  margin-left: 45px;
+}
